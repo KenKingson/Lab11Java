@@ -1,12 +1,13 @@
 package by.bntu.fitr.povt.coffeebaby.model;
 
-public abstract class Stone implements Comparable<Stone>{
+public abstract class Stone{
     private double weigth;
     private double price;
 
 
+
     public Stone()
-    {};
+    {}
 
     public Stone(double weigth, double price) {
         this.weigth = weigth;
@@ -37,7 +38,5 @@ public abstract class Stone implements Comparable<Stone>{
                 "}\n";
     }
 
-    public int compareTo(Stone o) {
-        return this.weigth.compareTo(o.getWeigth());
-    }
+
 }
