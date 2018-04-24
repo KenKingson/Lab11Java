@@ -1,11 +1,9 @@
 package by.bntu.fitr.povt.coffeebaby.model.engines;
 
-import by.bntu.fitr.povt.coffeebaby.model.Stone;
-
 public abstract class CommonArray extends Checker {
     protected Object[] array = new Object[0];
 
-    public Object getElement(int index){
+    public Object getElement(int index) {
         return this.array[index];
     }
 

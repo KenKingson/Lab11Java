@@ -8,7 +8,7 @@ import by.bntu.fitr.povt.coffeebaby.model.engines.ListQueue;
 import by.bntu.fitr.povt.coffeebaby.model.engines.ListStack;
 import by.bntu.fitr.povt.coffeebaby.view.Inputer;
 import by.bntu.fitr.povt.coffeebaby.view.View;
-
+import by.bntu.fitr.povt.coffeebaby.model.StonesCalc;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -18,7 +18,7 @@ public class Controller {
         int choice, countOfStones;
         View.output("Please, input number of stones in your necklace: ");
         countOfStones = Inputer.inputInt();
-        Necklace necklace = new Necklace(new ArrayList());
+        Necklace necklace = new Necklace(new ArrayStack());
         Mine mine = Mine.getMine();
         mine.extractionStone();
         necklace = stoneMaster.createNecklace(necklace, countOfStones);
@@ -39,7 +39,7 @@ public class Controller {
                     View.output(necklace+"");
                     break;
                 }
-                /*case 2:{
+                case 2:{
                     View.output("Total price for stones in necklace: "
                             + String.format("%1.2f", stonesCalc.totalPriceForNecklace(necklace)));
                     break;
@@ -60,7 +60,7 @@ public class Controller {
                     stonesCalc.sortStonesByPrice(necklace);
                     View.output(necklace+"");
                     break;
-                }*/
+                }
                 case 6:{
                     System.exit(0);
                 }

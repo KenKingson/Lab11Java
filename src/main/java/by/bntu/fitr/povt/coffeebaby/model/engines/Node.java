@@ -1,30 +1,30 @@
 package by.bntu.fitr.povt.coffeebaby.model.engines;
 
-import by.bntu.fitr.povt.coffeebaby.model.Stone;
-
 public class Node {
     private Object stone;
     private Node next;
 
-    public Node(){}
+    public Node() {
+    }
 
-    public Node(Object stone, Node next){
+    public Node(Object stone, Node next) {
         this.next = next;
         this.stone = stone;
     }
 
-    public Object getElement(){
+    public Object getElement() {
         return stone;
     }
 
-    public Node getNext(){
+    public Node getNext() {
         return next;
     }
 
-    public void setElement(Object stone){
+    public void setElement(Object stone) {
         this.stone = stone;
     }
-    public void setNext(Node next){
+
+    public void setNext(Node next) {
         this.next = next;
     }
 

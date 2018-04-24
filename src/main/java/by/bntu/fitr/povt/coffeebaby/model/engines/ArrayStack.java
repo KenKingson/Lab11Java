@@ -1,7 +1,6 @@
 package by.bntu.fitr.povt.coffeebaby.model.engines;
 
 
-
 public class ArrayStack extends CommonArray {
 
     public Object pop() {

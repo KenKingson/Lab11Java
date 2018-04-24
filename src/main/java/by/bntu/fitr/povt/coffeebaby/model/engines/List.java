@@ -1,13 +1,11 @@
 package by.bntu.fitr.povt.coffeebaby.model.engines;
 
-import by.bntu.fitr.povt.coffeebaby.model.Stone;
-
 public interface List {
     boolean isEmpty();
 
     void push(Object element);
 
-   Object pop();
+    Object pop();
 
     int size();
 

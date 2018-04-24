@@ -1,6 +1,6 @@
 package by.bntu.fitr.povt.coffeebaby.model;
 
-public abstract class Stone {
+public abstract class Stone implements Comparable<Stone>{
     private double weigth;
     private double price;
 
@@ -35,5 +35,9 @@ public abstract class Stone {
                 " | Weigth = " + String.format("%.2f", weigth) +
                 " | Price = " + String.format("%.1f", price) +
                 "}\n";
+    }
+
+    public int compareTo(Stone o) {
+        return this.weigth.compareTo(o.getWeigth());
     }
 }

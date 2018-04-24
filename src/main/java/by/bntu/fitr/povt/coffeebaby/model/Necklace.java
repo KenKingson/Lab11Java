@@ -3,10 +3,8 @@ package by.bntu.fitr.povt.coffeebaby.model;
 
 import by.bntu.fitr.povt.coffeebaby.model.engines.List;
 
-import java.util.ArrayList;
 
-
-public class Necklace<T extends ArrayList> {
+public class Necklace<T extends List> {
     private T container;
 
     public Necklace(T containers) {
@@ -19,21 +17,20 @@ public class Necklace<T extends ArrayList> {
     }
 
 
-
-    public void addStone(Stone stone){
-        container.add(stone);
+    public void addStone(Stone stone) {
+        container.push(stone);
     }
 
     @Override
     public String toString() {
 
         StringBuilder builder = new StringBuilder();
-        for(int i = 0;i < container.size();i++) {
+        for (int i = 0; i < container.size(); i++) {
 
-              builder.append(container.get(i).toString());
+            builder.append(container.getElement(i).toString());
 
         }
-            return "Necklace{" + builder + " }";
+        return "Necklace{" + builder + " }";
 
 
     }

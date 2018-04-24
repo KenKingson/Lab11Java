@@ -1,8 +1,6 @@
 package by.bntu.fitr.povt.coffeebaby.model.engines;
 
 
-
-
 public abstract class CommonList extends Checker {
 
     protected Node node = null;
@@ -33,8 +31,8 @@ public abstract class CommonList extends Checker {
 
     }
 
-    public Object getElement(int index){
-        for(int i = 0; i < index;i++){
+    public Object getElement(int index) {
+        for (int i = 0; i < index; i++) {
             node = node.next;
         }
         return node.element;
